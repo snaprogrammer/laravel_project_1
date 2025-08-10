@@ -45,17 +45,17 @@ export default {
     };
   },
   mounted() {
-    // Load the list of content - access paginated data array via res.data.data
+    
     axios
       .get("/api/contents")
       .then((res) => {
-        this.contentData = res.data.data; // <-- Important: paginated data is inside data.data
+        this.contentData = res.data.data; 
       })
       .catch((err) => console.error(err));
   },
   methods: {
     openModal(id) {
-      // Load full content detail by ID
+      
       axios
         .get(`/api/contents/${id}`)
         .then((res) => {
