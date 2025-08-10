@@ -1,3 +1,68 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Nav container */
+nav {
+  background-color: #3490dc; /* Company blue */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+nav img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* Menu items container */
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a.router-link-exact-active {
+  border-bottom: 2px solid white;
+}
+
+/* Logout button styles */
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav button:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 20px;
+  color: #2c3e50;
+}
+
+p {
+  margin: 20px;
+  font-size: 18px;
+}
